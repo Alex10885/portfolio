@@ -389,6 +389,12 @@ input {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .button:hover {
+    background: linear-gradient(180deg, #fdde76 0%, #ffbb01 100%);
+  }
+}
+
 @media (max-width: 564px) {
   .section {
     padding-top: 63px;

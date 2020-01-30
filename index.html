@@ -21,6 +21,7 @@
         <link rel="stylesheet" href="css/swiper.min.css">
         <link rel="stylesheet" href="css/style.css">
         <title>Доронин Алексей - фрилансер, веб-разработчик</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
 
     <header class="hero">
@@ -55,7 +56,8 @@
                         можно заказать
                         дизайн и верстку небольшого сайта или интернет-магазина
                     </p>
-                    <button class="hero__button button wow fadeInRight" data-wow-delay="0.8s">Бесплатная
+                    <button data-modal='consultation' class="hero__button button wow fadeInRight"
+                        data-wow-delay="0.8s">Бесплатная
                         консультация</button>
                 </div>
                 <div class="hero-avatar wow fadeIn" data-wow-delay="1.5s"></div>
@@ -271,6 +273,7 @@
         <div class="container">
             <h2 class="section__title">Свяжитесь со мной</h2>
             <div class="contacts-block">
+
                 <form action="#" class="contacts__form wow pulse" data-wow-delay="0.4s">
                     <h4 class="form__title">Можете просто оставить заявку, я позвоню вам сегодня</h4>
                     <input type="text" class="input input-name" placeholder="Ваше имя">
@@ -317,13 +320,32 @@
                         </a>
                     </div>
                     <!-- /.social__links -->
-                    <a href="#" class="contacts__policy">Политика конфенденциальности</a> <!-- /.comtacts__policy -->
+                    <a href="#" class="contacts__policy">Политика конфенденциальности</a>
+                    <!-- /.comtacts__policy -->
                 </div>
             </div>
             <!-- /.contacts-block -->
         </div>
     </footer>
 
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <form action="#" class="contacts__form">
+                <h4 class="form__title">Можете просто оставить заявку, я позвоню вам сегодня</h4>
+                <input type="text" class="input input-name" placeholder="Ваше имя">
+                <input type="text" class="input input-phone" placeholder="Ваш телефон">
+                <button class="button button__form">Бесплатная консультация</button>
+            </form>
+        </div>
+
+        <div class="modal" id="thanks">
+            <div class="modal__close">&times;</div>
+            <form class="contacts__form">
+                <h4 class="form__title">Спасибо за вашу заявку</h4>
+            </form>
+        </div>
+    </div>
     <script src="js/wow.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/main.js"></script>

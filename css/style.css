@@ -442,6 +442,20 @@ label.error {
   display: none;
 }
 
+/*pageup*/
+.pageup {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  height: 40px;
+  width: 40px;
+}
+
+.pageup img {
+  width: 100%;
+}
+
 /*esponsive*/
 @media (max-width: 1100px) {
   .hero-avatar {

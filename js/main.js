@@ -18,5 +18,25 @@ $(document).ready(function () {
         $('.overlay, #consultation, #thanks').fadeOut('slow');
     });
 
+    $('#contacts__form').validate({
+        rules: {
+            name: "required",
+            phone: "required"
+        },
+        messages: {
+            name: "Введите свое имя",
+            phone: "Введите свой номер телефона"
+        }
+    });
+    $('#consultation form').validate({
+        rules: {
+            name: "required",
+            phone: "required"
+        },
+        messages: {
+            name: "Введите свое имя",
+            phone: "Введите свой номер телефона"
+        }
+    });
 
 });

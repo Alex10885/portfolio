@@ -105,7 +105,7 @@ body {
   border-radius: 50%;
   background-image: url(../img/avatar.jpg);
   background-repeat: no-repeat;
-  background-position: center top -40px;
+  background-position: center top;
   background-size: cover;
   border: 13px solid #fff;
 }
@@ -463,6 +463,8 @@ label.error {
   .button:hover {
     background: linear-gradient(180deg, #fdde76 0%, #ffbb01 100%);
   }
+
+  
 }
 
 @media (max-width: 564px) {
@@ -491,7 +493,7 @@ label.error {
     width: 206px;
     height: 206px;
     border-width: 7px;
-    background-position: center top -20px;
+    background-position: center top -1px;
   }
 
   .contacts__text {
